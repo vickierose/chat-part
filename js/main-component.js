@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Provider } from 'react-redux';
 
 import ChatContainer from './containers/chat';
 import LoaderContainer from './containers/loader';
@@ -11,12 +12,14 @@ class Main extends Component {
     }
     render() {
         return (
+            <Provider>
             <div>
                 <ChatContainer/>
                 <LoaderContainer/>
                 <LoginContainer/>
                 <WSContainer/>
             </div>
+            </Provider>
         );
     }
 }
