@@ -12,7 +12,7 @@ class Main extends Component {
     }
     render() {
         return (
-            <Provider>
+            <Provider store={this.props.store}>
             <div>
                 <ChatContainer/>
                 <LoaderContainer/>
